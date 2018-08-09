@@ -1,9 +1,9 @@
 installing_message = "Reminder: yuzu is an <b>experimental</b> emulator. Stuff will break!"
-new_tool = "https://raw.githubusercontent.com/j-selby/test-installer/master/liftinstall5.exe"
 
 [[packages]]
 name = "yuzu Nightly"
 description = "The nightly build of yuzu contains already reviewed and tested features."
+default = true
     [packages.source]
     name = "github"
     match = "^yuzu-windows-mingw-[0-9]*-[0-9a-f]*.zip$"
@@ -26,13 +26,3 @@ description = "The canary build of yuzu has additional features that are still w
     name = "yuzu Canary"
     relative_path = "canary-mingw/yuzu.exe"
     description = "Launch yuzu (Canary version)"
-
-[[packages]]
-name = "Test package"
-description = "Just a testing package"
-default = true
-    [packages.source]
-    name = "github"
-    match = "^TestPackage.zip$"
-        [packages.source.config]
-        repo = "j-selby/test-installer"
