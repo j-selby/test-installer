@@ -11,7 +11,7 @@ default = true
         [packages.source.config]
         repo = "citra-emu/citra-nightly"
     [[packages.shortcuts]]
-    name = "citra Nightly"
+    name = "Citra Nightly"
     relative_path = "nightly-mingw/citra-qt.exe"
     description = "Launch Citra (Nightly version)"
 
@@ -24,6 +24,6 @@ description = "The canary build of Citra has additional features that are still 
         [packages.source.config]
         repo = "citra-emu/citra-canary"
     [[packages.shortcuts]]
-    name = "citra Canary"
+    name = "Citra Canary"
     relative_path = "canary-mingw/citra-qt.exe"
     description = "Launch Citra (Canary version)"
