@@ -1,0 +1,29 @@
+installing_message = "Reminder: Citra is an <b>experimental</b> emulator. Stuff will break!"
+hide_advanced = true
+
+[[packages]]
+name = "Citra Nightly"
+description = "The nightly build of Citra contains already reviewed and tested features."
+default = true
+    [packages.source]
+    name = "github"
+    match = "^citra-windows-mingw-[0-9]*-[0-9a-f]*.tar.gz$"
+        [packages.source.config]
+        repo = "citra-emu/citra-nightly"
+    [[packages.shortcuts]]
+    name = "citra Nightly"
+    relative_path = "nightly-mingw/citra-qt.exe"
+    description = "Launch Citra (Nightly version)"
+
+[[packages]]
+name = "Citra Canary"
+description = "The canary build of Citra has additional features that are still waiting on review."
+    [packages.source]
+    name = "github"
+    match = "^citra-windows-mingw-[0-9]*-[0-9a-f]*.tar.gz$"
+        [packages.source.config]
+        repo = "citra-emu/citra-canary"
+    [[packages.shortcuts]]
+    name = "citra Canary"
+    relative_path = "canary-mingw/citra-qt.exe"
+    description = "Launch Citra (Canary version)"
