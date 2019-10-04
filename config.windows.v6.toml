@@ -4,6 +4,7 @@ hide_advanced = true
 [[packages]]
 name = "yuzu"
 description = "Includes frequent updates to yuzu with all the latest reviewed and tested features."
+default = true
     [packages.source]
     name = "github"
     match = "^yuzu-windows-mingw-[0-9]*-[0-9a-f]*.zip$"
